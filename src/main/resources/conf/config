@@ -1,5 +1,7 @@
-imitTankCount=10
+imitTankCount=1000
 tankSpeed=5
 bulletSpeed=20
 gameWidth=1080
 gameHeight=960
+goodFS=cn.cq.strategy.impl.FourDirFireStrategy
+badFS=cn.cq.strategy.impl.DefaultFireStrategy

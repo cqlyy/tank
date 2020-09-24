@@ -13,11 +13,11 @@ public class Bullet {
     public static final int WIDTH = ResourceMgr.bulletD.getWidth();
     public static final int HEIGHT = ResourceMgr.bulletD.getHeight();
     private int x,y;
-    private Dir dir;
+    public Dir dir;
 
     private boolean living = true;
     private TankFrame tankFrame;
-    private Group group = Group.BAD;
+    public Group group = Group.BAD;
 
     Rectangle rect = new Rectangle();
 
@@ -31,6 +31,8 @@ public class Bullet {
         rect.y = this.y;
         rect.width = this.WIDTH;
         rect.height = this.HEIGHT;
+
+        tankFrame.bullets.add(this);
     }
 
     public Group getGroup() {
